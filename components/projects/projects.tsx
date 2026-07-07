@@ -1,23 +1,15 @@
 import {
   ArrowRight,
-  Bot,
-  Compass,
-  Layers,
-  LineChart,
-  Sparkles,
-  Wand2,
+  Car,
+  ClipboardCheck,
+  Shield,
+  Wrench,
 } from "lucide-react";
 import type { ComponentType, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import { FadeIn } from "@/components/ui/motion-primitives";
-
-/**
- * Project imagery below is mockup-only. All visuals are sourced from
- * Dribbble and credit belongs to the original creators on dribbble.com.
- * Replace these with your own work before shipping.
- */
 
 type Project = {
   id: string;
@@ -33,85 +25,60 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    id: "loom",
-    icon: Sparkles,
-    iconLabel: "LOOM",
+    id: "jeep-life",
+    icon: Car,
+    iconLabel: "Jeep Life",
     title:
-      "An AI writing companion that thinks alongside you, allowing you to capture ideas, edits, and drafts in one focused space.",
+      "Enterprise Android app for Jeep owners with vehicle management, roadside assistance, and connected services.",
     description:
-      "I designed Loom, a focused writing surface where ideas, edits, and drafts coexist without the chat clutter.",
-    meta: "Design Engineer, 2024",
-    imageRatio: 752 / 497,
-    image:
-      "https://cdn.dribbble.com/userupload/46128964/file/b92b9d268dd928642ca94bd49e32923a.jpg?resize=752x497&vertical=center",
-    imageAlt: "Loom AI writing companion mockup",
-  },
-  {
-    id: "atlas",
-    icon: Compass,
-    iconLabel: "Atlas Studio",
-    title: "A two week brand and product sprint for a creative studio.",
-    description:
-      "End to end identity, marketing site, and a small product surface designed to feel quietly confident across every touchpoint.",
-    meta: "Product & Brand Designer, 2025",
+      "Integrated REST APIs, Firebase, third-party SDKs, and Ollama LLM models for AI-powered mobile features. Managed Gradle builds, release validation, and Play Store deployments.",
+    meta: "Android Native & Flutter, 2024",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/24599416/file/original-1ae5075dcd129aebb16bdbca24b41ac7.png?resize=1024x768&vertical=center",
-    imageAlt: "Atlas Studio brand and product sprint mockup",
+      "https://images.unsplash.com/photo-1519641476594-76f1e0f29620?auto=format&fit=crop&w=1024&q=80",
+    imageAlt: "Jeep Life connected vehicle mobile app",
   },
   {
-    id: "rhythm",
-    icon: LineChart,
-    iconLabel: "Rhythm",
-    title: "Calm analytics for indie founders.",
-    description:
-      "A weekly digest that turns raw product data into a simple narrative. Built so you can read it on a Sunday with coffee.",
-    meta: "Founder & Designer, 2024",
-    imageRatio: 1024 / 768,
-    image:
-      "https://cdn.dribbble.com/userupload/47357856/file/75841fa59f32f05ca6c5ddf02d08dfe6.png?resize=1024x768&vertical=center",
-    imageAlt: "Rhythm calm analytics mockup",
-  },
-  {
-    id: "groove",
-    icon: Wand2,
-    iconLabel: "Groove",
+    id: "surfbank",
+    icon: Shield,
+    iconLabel: "SurfBank",
     title:
-      "Reimagining the booking flow for a music school, asisting thousands of students in finding the right lessons.",
+      "Secure content management and sharing platform built with Android Native.",
     description:
-      "I led a redesign of the lesson booking experience, cutting drop off in half and making the schedule feel like a calendar people actually want to open.",
-    meta: "Lead Designer, 2023",
+      "Integrated Firebase Authentication, push notifications, and reusable UI components following MVVM and Clean Architecture. Handled API optimization and production deployment.",
+    meta: "Android Developer, 2023",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/43955214/file/original-d4cde1de803e84b97d8892e3444c04b0.png?resize=1024x768&vertical=center",
-    imageAlt: "Groove music school booking flow mockup",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1024&q=80",
+    imageAlt: "SurfBank secure mobile platform",
   },
   {
-    id: "fieldnote",
-    icon: Layers,
-    iconLabel: "Fieldnote",
+    id: "vw-infra-audit",
+    icon: ClipboardCheck,
+    iconLabel: "Volkswagen Infra Audit",
     title:
-      "A pocket sized research tool for design teams that want to get out of their docs and into the world.",
+      "Dealership infrastructure audit app with image capture, dynamic forms, and offline support.",
     description:
-      "Capture quotes, tag patterns, and synthesize themes in one place. The interface stays out of the way so the thinking can happen.",
-    meta: "Design Engineer, 2024",
+      "Built API synchronization, Gradle build management, debugging workflows, and release validation while collaborating with QA and backend teams.",
+    meta: "Android Developer, 2023",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/30310902/file/original-621e7fe47be9d11ee14544456c693bec.png?resize=1024x768&vertical=center",
-    imageAlt: "Fieldnote pocket sized research tool mockup",
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1024&q=80",
+    imageAlt: "Volkswagen Infra Audit mobile application",
   },
   {
-    id: "talkback",
-    icon: Bot,
-    iconLabel: "Talkback",
-    title: "A friendlier interface for talking to language models.",
+    id: "vw-assistance",
+    icon: Wrench,
+    iconLabel: "Volkswagen Assistance",
+    title:
+      "Enterprise dealer app for service operations, roadside assistance, and customer requests.",
     description:
-      "An exploration of how AI chat could feel less like a terminal and more like a conversation with a curious friend.",
-    meta: "Independent Project, 2025",
+      "Integrated REST APIs, authentication, notifications, and business workflows with Git-based development and CI/CD release processes.",
+    meta: "Android Developer, 2023",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/16560717/file/original-c6f745d50302d66609bfe080f99f5396.png?resize=1024x768&vertical=center",
-    imageAlt: "Talkback friendlier AI chat interface mockup",
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1024&q=80",
+    imageAlt: "Volkswagen Assistance dealer operations app",
   },
 ];
 
@@ -135,8 +102,8 @@ export function Projects({
               My projects
             </h2>
             <p className="max-w-[33ch] text-[18px] leading-[1.45] tracking-tight text-foreground/65 sm:text-[20px]">
-              From playful experiments to thoughtful systems, a look at the
-              work I&rsquo;m proud to have shipped.
+              Production Android and Flutter apps shipped across automotive,
+              fintech, and enterprise domains.
             </p>
           </FadeIn>
         ) : null}
@@ -147,7 +114,7 @@ export function Projects({
           ))}
         </div>
 
-        {viewMoreVisible ? (
+        {viewMoreVisible && PROJECTS.length > 4 ? (
           <div className="mt-12 flex justify-center sm:mt-16">
             <Link
               href="/projects"

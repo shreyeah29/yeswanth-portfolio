@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -33,8 +33,9 @@ export function ContactCard(): ReactNode {
                   Let&rsquo;s connect
                 </h2>
                 <p className="max-w-[29ch] text-[18px] leading-[1.4] tracking-tight text-foreground/65 sm:text-[22px] mb-6">
-                  I&rsquo;m always open to discussing new projects, creative
-                  ideas, or opportunities to be part of your visions. Just reach out!
+                  Open to Android, Flutter, and mobile engineering roles. Reach
+                  out for collaborations, opportunities, or to talk mobile
+                  architecture and release engineering.
                 </p>
                 <ContactCardCtas />
               </div>
@@ -42,27 +43,27 @@ export function ContactCard(): ReactNode {
               <div className="border-foreground/8 flex flex-col items-center justify-center gap-6 rounded-[1.1rem] border bg-background p-6 sm:p-8">
                 <div className="flex items-center gap-3 opacity-75">
                   <SocialIcon
-                    href="mailto:hello@example.com"
+                    href="mailto:bhavanasiyeshwanth@gmail.com"
                     label="Email"
                     lucideIcon={Mail}
                   />
                   <SocialIcon
-                    href="https://www.linkedin.com"
+                    href="https://www.linkedin.com/in/sai-yeswanth-bhavanasi-b8964a245"
                     label="LinkedIn"
                     imageSrc="/linkedin.svg"
                   />
                   <SocialIcon
-                    href="https://x.com"
-                    label="X"
-                    imageSrc="/x.svg"
+                    href="https://github.com/yeswanth30"
+                    label="GitHub"
+                    lucideIcon={Github}
                   />
                 </div>
                 <div className="flex flex-col items-center gap-1 text-center">
                   <p className="text-[13px] tracking-tight text-foreground/70">
-                    2026 &copy; Built with Next.js
+                    2026 &copy; Yeswanth Bhavanasi
                   </p>
                   <p className="text-[12px] tracking-tight text-foreground/45">
-                    By React Bits Pro
+                    Built with Next.js
                   </p>
                 </div>
               </div>

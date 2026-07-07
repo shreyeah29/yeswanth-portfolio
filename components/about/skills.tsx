@@ -1,15 +1,18 @@
 import type { ReactNode } from "react";
 
 const SKILLS = [
-  "UI/UX Design",
-  "Design Systems",
-  "Prototyping & Motion",
-  "Frontend Development",
-  "TypeScript & React",
-  "Interaction Design",
-  "Performance Tuning",
-  "Accessibility",
-  "Visual Identity",
+  "Android Native (Kotlin/Java)",
+  "Flutter & Dart",
+  "Jetpack Compose",
+  "MVVM & Clean Architecture",
+  "Gradle & Build Variants",
+  "CI/CD & Jenkins",
+  "REST API Integration",
+  "Firebase",
+  "Release Engineering",
+  "Play Store Deployment",
+  "Debugging & Logcat Analysis",
+  "Third-party SDK Integration",
 ];
 
 export function Skills(): ReactNode {

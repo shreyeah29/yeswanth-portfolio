@@ -12,22 +12,16 @@ type Chip = {
 };
 
 const CHIPS: Chip[] = [
-  {
-    label: "Figma",
-    slug: "figma",
-    bg: "#1f1f1f",
-    fg: "#ffffff",
-    iconUrl: "https://svgl.app/library/figma.svg",
-  },
-  { label: "React", slug: "react", bg: "#1FB6CB", fg: "#ffffff" },
-  { label: "Next.js", slug: "nextdotjs", bg: "#1f1f1f", fg: "#ffffff" },
-  { label: "TypeScript", slug: "typescript", bg: "#2F74C0", fg: "#ffffff" },
-  { label: "shadcn/ui", slug: "shadcnui", bg: "#5b54ff", fg: "#ffffff" },
-  { label: "Cursor", slug: "cursor", bg: "#111111", fg: "#ffffff" },
-  { label: "GSAP", slug: "gsap", bg: "#0AE448", fg: "#0a0a0a" },
+  { label: "Kotlin", slug: "kotlin", bg: "#7F52FF", fg: "#ffffff" },
+  { label: "Flutter", slug: "flutter", bg: "#02569B", fg: "#ffffff" },
+  { label: "Android", slug: "android", bg: "#3DDC84", fg: "#0a0a0a" },
+  { label: "Java", slug: "openjdk", bg: "#ED8B00", fg: "#ffffff" },
+  { label: "Firebase", slug: "firebase", bg: "#FFCA28", fg: "#0a0a0a" },
+  { label: "Gradle", slug: "gradle", bg: "#02303A", fg: "#ffffff" },
+  { label: "Git", slug: "git", bg: "#F05032", fg: "#ffffff" },
+  { label: "Jenkins", slug: "jenkins", bg: "#D24939", fg: "#ffffff" },
   { label: "GitHub", slug: "github", bg: "#181717", fg: "#ffffff" },
-  { label: "Vercel", slug: "vercel", bg: "#0a0a0a", fg: "#ffffff" },
-  { label: "Tailwind CSS", slug: "tailwindcss", bg: "#2BBCF5", fg: "#ffffff" },
+  { label: "Postman", slug: "postman", bg: "#FF6C37", fg: "#ffffff" },
 ];
 
 const CHIP_RADIUS = 14;

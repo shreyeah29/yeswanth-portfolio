@@ -11,7 +11,8 @@ import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
   title: "About",
-  description: "About me, background, and how to get in touch.",
+  description:
+    "About Yeswanth Bhavanasi — Android Native and Flutter engineer, background, and experience.",
   path: "/about",
 });
 
@@ -26,17 +27,45 @@ export default function AboutPage(): ReactNode {
         <FadeIn delay={0.5}>
           <div className="rounded-4xl border border-foreground/5 bg-foreground/1.5 p-8 sm:p-12 dark:bg-foreground/3">
             <h1 className="font-serif text-[1.75rem] font-medium tracking-tight text-foreground sm:text-[2rem]">
-              Hello! I&rsquo;m <span className="border-b border-foreground/30 pb-0.5">Josh Mercer</span>.
+              Hello! I&rsquo;m{" "}
+              <span className="border-b border-foreground/30 pb-0.5">
+                Sai Yeswanth Bhavanasi
+              </span>
+              .
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                A <strong className="font-semibold text-foreground">product designer and frontend engineer</strong> passionate about building intuitive, human-centered digital experiences. With a background in <strong className="font-semibold text-foreground">visual craft</strong> and <strong className="font-semibold text-foreground">interaction design</strong>, I bring a unique blend of design thinking and technical execution to every project.
+                An{" "}
+                <strong className="font-semibold text-foreground">
+                  Android Native and Flutter Engineer
+                </strong>{" "}
+                with 3+ years of experience building production mobile
+                applications. I specialize in{" "}
+                <strong className="font-semibold text-foreground">
+                  Kotlin, Java, and Dart
+                </strong>
+                , with deep hands-on work across Gradle, CI/CD, and release
+                engineering.
               </p>
               <p>
-                My journey into design began when I realized how often good user experience was missing from powerful tools. That led me to embrace <strong className="font-semibold text-foreground">user-centered design</strong> as both a mindset and a craft, one that balances clarity, creativity, and functionality.
+                My work spans integrating application modules, third-party SDKs,
+                REST APIs, and Firebase into stable releases. I&rsquo;m
+                comfortable across the full mobile delivery cycle: debugging with
+                Logcat, root cause analysis, smoke and regression testing, and
+                Play Store deployments.
               </p>
               <p>
-                Currently leading design at small product teams shipping software for <strong className="font-semibold text-foreground">creative professionals</strong>, I&rsquo;m always looking for opportunities to <strong className="font-semibold text-foreground">shape thoughtful interfaces and build scalable design systems</strong>.
+                Recently at{" "}
+                <strong className="font-semibold text-foreground">
+                  Feqma Technologies
+                </strong>
+                , I&rsquo;ve shipped Android and Flutter apps including AI-powered
+                features with Ollama LLM integration. I&rsquo;m always looking for
+                opportunities to build{" "}
+                <strong className="font-semibold text-foreground">
+                  reliable, performance-optimized mobile products
+                </strong>
+                .
               </p>
             </div>
           </div>
