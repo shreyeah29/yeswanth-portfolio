@@ -33,10 +33,9 @@ const PROJECTS: Project[] = [
     description:
       "Integrated REST APIs, Firebase, third-party SDKs, and Ollama LLM models for AI-powered mobile features. Managed Gradle builds, release validation, and Play Store deployments.",
     meta: "Android Native & Flutter, 2024",
-    imageRatio: 1024 / 768,
-    image:
-      "https://images.unsplash.com/photo-1519641476594-76f1e0f29620?auto=format&fit=crop&w=1024&q=80",
-    imageAlt: "Jeep Life connected vehicle mobile app",
+    imageRatio: 249 / 202,
+    image: "/projects/jeeplogo.png",
+    imageAlt: "Jeep Life app logo",
   },
   {
     id: "surfbank",
@@ -47,10 +46,9 @@ const PROJECTS: Project[] = [
     description:
       "Integrated Firebase Authentication, push notifications, and reusable UI components following MVVM and Clean Architecture. Handled API optimization and production deployment.",
     meta: "Android Developer, 2023",
-    imageRatio: 1024 / 768,
-    image:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1024&q=80",
-    imageAlt: "SurfBank secure mobile platform",
+    imageRatio: 1,
+    image: "/projects/surfbanklogo.jpeg",
+    imageAlt: "SurfBank app logo",
   },
   {
     id: "vw-infra-audit",
@@ -61,10 +59,9 @@ const PROJECTS: Project[] = [
     description:
       "Built API synchronization, Gradle build management, debugging workflows, and release validation while collaborating with QA and backend teams.",
     meta: "Android Developer, 2023",
-    imageRatio: 1024 / 768,
-    image:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1024&q=80",
-    imageAlt: "Volkswagen Infra Audit mobile application",
+    imageRatio: 1,
+    image: "/projects/volkswagenlogo.png",
+    imageAlt: "Volkswagen Infra Audit app logo",
   },
   {
     id: "vw-assistance",
@@ -75,10 +72,9 @@ const PROJECTS: Project[] = [
     description:
       "Integrated REST APIs, authentication, notifications, and business workflows with Git-based development and CI/CD release processes.",
     meta: "Android Developer, 2023",
-    imageRatio: 1024 / 768,
-    image:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1024&q=80",
-    imageAlt: "Volkswagen Assistance dealer operations app",
+    imageRatio: 1,
+    image: "/projects/volkswagenlogo.png",
+    imageAlt: "Volkswagen Assistance app logo",
   },
 ];
 
@@ -166,7 +162,7 @@ function ProjectCard({
               alt={project.imageAlt}
               fill
               sizes="(min-width: 1024px) 540px, (min-width: 768px) 45vw, 100vw"
-              className="object-cover"
+              className="object-contain p-8"
               priority={index < 2}
             />
           </div>
