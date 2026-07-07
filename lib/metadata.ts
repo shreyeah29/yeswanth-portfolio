@@ -4,13 +4,13 @@ export const siteConfig = {
   name: "Yeswanth Bhavanasi",
   description:
     "Android Native and Flutter Engineer with 3+ years of experience building production mobile apps, CI/CD pipelines, and release-ready Android systems.",
-  url: "https://yeswanthdev.netlify.app",
+  url: "https://yeswanthportfolio-eight.vercel.app",
   ogImage: "/og-image.png",
   creator: "@yeswanth30",
   authors: [
     {
       name: "Sai Yeswanth Bhavanasi",
-      url: "https://yeswanthdev.netlify.app",
+      url: "https://yeswanthportfolio-eight.vercel.app",
     },
   ],
   keywords: [
